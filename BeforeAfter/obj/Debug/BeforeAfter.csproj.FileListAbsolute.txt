@@ -1,0 +1,10 @@
+c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\BeforeAfter\bin\Debug\BeforeAfter.exe.config
+c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\BeforeAfter\obj\Debug\BeforeAfter.csprojResolveAssemblyReference.cache
+c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\BeforeAfter\bin\Debug\BeforeAfter.exe
+c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\BeforeAfter\bin\Debug\BeforeAfter.pdb
+c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\BeforeAfter\bin\Debug\PostSharp.dll
+c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\BeforeAfter\bin\Debug\PostSharp.xml
+c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\BeforeAfter\bin\Debug\BeforeAfter.pssym
+c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\BeforeAfter\obj\Debug\BeforeAfter.exe
+c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\BeforeAfter\obj\Debug\BeforeAfter.pdb
+c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\BeforeAfter\obj\Debug\BeforeAfter.exe.postsharp

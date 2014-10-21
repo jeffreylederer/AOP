@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[Intercept]Intercept.ExceptionAspect">
+    <Instance Declaration="#2=M:[Intercept]Intercept.Holidays::GetHoliday(System.String)" Id="9d36a9596a037f35">
+      <Target>
+        <JoinPoint Description="#3=Wrapped by advice(s) OnException" Ordinal="4" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#4=T:[Intercept]Intercept.RetryOnExceptionAttribute">
+    <Instance Declaration="#5=M:[Intercept]Intercept.Holidays::GetHolidays()" Id="9d36a959ee21a7e2">
+      <Target>
+        <JoinPoint Description="#6=Intercepted by OnInvoke" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#2" Id="9d36a9597b847a15">
+      <Target>
+        <JoinPoint Description="#6" />
+      </Target>
+    </Instance>
+  </Class>
+</Symbols>

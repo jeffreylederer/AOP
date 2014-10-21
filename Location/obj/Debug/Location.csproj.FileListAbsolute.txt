@@ -1,0 +1,10 @@
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\BeforeAfter\Location\bin\Debug\Location.exe.config
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\BeforeAfter\Location\obj\Debug\Location.csprojResolveAssemblyReference.cache
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\BeforeAfter\Location\bin\Debug\Location.exe
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\BeforeAfter\Location\bin\Debug\Location.pdb
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\BeforeAfter\Location\bin\Debug\PostSharp.dll
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\BeforeAfter\Location\bin\Debug\PostSharp.xml
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\BeforeAfter\Location\bin\Debug\Location.pssym
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\BeforeAfter\Location\obj\Debug\Location.exe
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\BeforeAfter\Location\obj\Debug\Location.pdb
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\BeforeAfter\Location\obj\Debug\Location.exe.postsharp

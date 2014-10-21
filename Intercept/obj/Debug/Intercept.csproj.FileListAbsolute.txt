@@ -1,0 +1,10 @@
+c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\Intercept\bin\Debug\Intercept.exe.config
+c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\Intercept\obj\Debug\Intercept.csprojResolveAssemblyReference.cache
+c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\Intercept\bin\Debug\Intercept.exe
+c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\Intercept\bin\Debug\Intercept.pdb
+c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\Intercept\obj\Debug\Intercept.exe
+c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\Intercept\obj\Debug\Intercept.pdb
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\BeforeAfter\Intercept\bin\Debug\PostSharp.dll
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\BeforeAfter\Intercept\bin\Debug\PostSharp.xml
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\BeforeAfter\Intercept\bin\Debug\Intercept.pssym
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\BeforeAfter\Intercept\obj\Debug\Intercept.exe.postsharp
