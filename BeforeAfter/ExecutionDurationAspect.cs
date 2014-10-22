@@ -48,7 +48,7 @@ namespace BeforeAfter
             Console.Write("\n{0} throw an exception: {1}\n\n", _methodName, args.Exception.GetType());
             args.FlowBehavior = FlowBehavior.Return;
             if (args.Arguments.Count > 0)
-                args.ReturnValue = string.Format("Timing: {0} is a bad parameter", args.Arguments[0]);
+                args.ReturnValue = string.Format("{0} is a bad parameter", args.Arguments[0]);
             else
                 args.ReturnValue = string.Format("failed");
         }

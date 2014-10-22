@@ -8,3 +8,13 @@ c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\BeforeAfter\bi
 c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\BeforeAfter\obj\Debug\BeforeAfter.exe
 c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\BeforeAfter\obj\Debug\BeforeAfter.pdb
 c:\users\ledejh\documents\visual studio 2013\Projects\BeforeAfter\BeforeAfter\obj\Debug\BeforeAfter.exe.postsharp
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\AOP\BeforeAfter\bin\Debug\BeforeAfter.exe.config
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\AOP\BeforeAfter\obj\Debug\BeforeAfter.exe
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\AOP\BeforeAfter\obj\Debug\BeforeAfter.pdb
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\AOP\BeforeAfter\bin\Debug\BeforeAfter.exe
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\AOP\BeforeAfter\bin\Debug\BeforeAfter.pdb
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\AOP\BeforeAfter\bin\Debug\PostSharp.dll
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\AOP\BeforeAfter\bin\Debug\PostSharp.xml
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\AOP\BeforeAfter\bin\Debug\BeforeAfter.pssym
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\AOP\BeforeAfter\obj\Debug\BeforeAfter.csprojResolveAssemblyReference.cache
+C:\Users\ledejh\Documents\Visual Studio 2013\Projects\AOP\BeforeAfter\obj\Debug\BeforeAfter.exe.postsharp
