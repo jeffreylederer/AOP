@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 
 
 namespace BeforeAfter
@@ -7,7 +8,7 @@ namespace BeforeAfter
     [ExecutionDurationAspect]
     public class Holidays
     {
-        private USHolidayService _service;
+        private readonly USHolidayService _service;
 
         public Holidays()
         {
@@ -15,11 +16,8 @@ namespace BeforeAfter
         }
         public string GetHolidays()
         {
-            var list = new List<string>();
             DataSet ds = _service.GetHolidaysAvailable();
-            foreach (DataRow row in ds.Tables[0].Rows)
-                list.Add((string) row["Name"]);
-            return string.Join(",", list.ToArray());
+            return string.Join(",", (from DataRow row in ds.Tables[0].Rows select (string) row["Name"]).ToArray());
         }
 
         public string GetHoliday(string holiday)
@@ -30,10 +28,8 @@ namespace BeforeAfter
         [ExecutionDurationAspect(AttributeExclude = true)]
         public bool IsHoliday(string holiday) 
         {
-            var list = new List<string>();
             DataSet ds = _service.GetHolidaysAvailable();
-            foreach (DataRow row in ds.Tables[0].Rows)
-                list.Add((string)row["Name"]);
+            var list = (from DataRow row in ds.Tables[0].Rows select (string) row["Name"]).ToList();
             return list.Contains(holiday);
         }
     }

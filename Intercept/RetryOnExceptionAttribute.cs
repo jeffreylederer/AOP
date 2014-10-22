@@ -6,11 +6,11 @@ namespace Intercept
     [Serializable]
     public class RetryOnExceptionAttribute : MethodInterceptionAspect
     {
-        private int _maxRetries { get; set; }
+        private readonly int _maxRetries;
 
-        public RetryOnExceptionAttribute(int MaxRetries)
+        public RetryOnExceptionAttribute(int maxRetries)
         {
-            _maxRetries = MaxRetries;
+            _maxRetries = maxRetries;
         }
        
         public override void OnInvoke(MethodInterceptionArgs args)

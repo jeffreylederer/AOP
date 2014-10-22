@@ -6,7 +6,7 @@ namespace Intercept
 {
     public class Holidays
     {
-        private USHolidayService _service;
+        private readonly USHolidayService _service;
 
         public Holidays()
         {

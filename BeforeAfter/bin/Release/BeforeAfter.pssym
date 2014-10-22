@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Symbols xmlns="http://schemas.postsharp.org/2.0/symbols">
   <Class Class="#1=T:[BeforeAfter]BeforeAfter.ExecutionDurationAspectAttribute">
-    <Instance Declaration="#2=T:[BeforeAfter]BeforeAfter.Holidays" Id="12858a74160a7b04">
+    <Instance Declaration="#2=T:[BeforeAfter]BeforeAfter.Holidays" Id="12858a746f3f0b6e">
       <Target Target="#3=M:[BeforeAfter]BeforeAfter.Holidays::GetHolidays()">
         <JoinPoint Description="#4=Wrapped by advice(s) OnEntry, OnSuccess, OnException" />
       </Target>

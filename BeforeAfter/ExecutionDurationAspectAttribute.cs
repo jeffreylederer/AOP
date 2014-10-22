@@ -20,22 +20,19 @@ namespace BeforeAfter
         public override bool CompileTimeValidate(MethodBase method)
         {
             var info = method as MethodInfo;
-            if (!typeof(String).IsAssignableFrom(info.ReturnType))
-            {
-                Message.Write(MessageLocation.Of(method), SeverityType.Error, "987",
-                    "Methods using this aspect can only return a string. You applied it on type {0}",
-                    info.ReturnType.ToString());
+            if (typeof (String).IsAssignableFrom(info.ReturnType)) 
+                return base.CompileTimeValidate(method);
+
+            Message.Write(MessageLocation.Of(method), SeverityType.Error, "987",
+                "Methods using this aspect can only return a string. You applied it on type {0}",
+                info.ReturnType.ToString());
               
-                return false;
-            }
-            return base.CompileTimeValidate(method);
+            return false;
         }
         public override void OnEntry(MethodExecutionArgs args)
         {
             args.MethodExecutionTag = DateTime.Now;
         }
-
-        
 
         public override void OnSuccess(MethodExecutionArgs args)
         {
@@ -49,10 +46,7 @@ namespace BeforeAfter
         {
             Console.Write("\n{0} throw an exception: {1}\n\n", _methodName, args.Exception.GetType());
             args.FlowBehavior = FlowBehavior.Return;
-            if (args.Arguments.Count > 0)
-                args.ReturnValue = string.Format("{0} is a bad parameter", args.Arguments[0]);
-            else
-                args.ReturnValue = string.Format("failed");
+            args.ReturnValue = args.Arguments.Count > 0 ? string.Format("{0} is a bad parameter", args.Arguments[0]) : string.Format("failed");
         }
     }
 }

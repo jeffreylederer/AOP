@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 
 
 namespace Location
@@ -10,12 +11,11 @@ namespace Location
         public static List<string> GetHolidays()
         {
             var service = new USHolidayService();
-            var list = new List<string>();
             DataSet ds = service.GetHolidaysAvailable();
-            foreach (DataRow row in ds.Tables[0].Rows)
-                list.Add((string) row["Name"]);
-            return list;
+            return (from DataRow row in ds.Tables[0].Rows select (string) row["Name"]).ToList();
         }
+
+       
         
     }
 }
