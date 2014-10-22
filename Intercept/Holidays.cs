@@ -13,7 +13,7 @@ namespace Intercept
             _service = new USHolidayService();
         }
 
-        [RetryOnExceptionAttribute(MaxRetries = 3)]
+        [RetryOnExceptionAttribute(3)]
         public string GetHolidays()
         {
             var list = new List<string>();
@@ -23,8 +23,8 @@ namespace Intercept
             return string.Join(",", list.ToArray());
         }
 
-        [ExceptionAspect(AspectPriority=2)]
-        [RetryOnExceptionAttribute(MaxRetries = 2, AspectPriority = 1)]
+        [ExceptionAspect(typeof(System.Web.Services.Protocols.SoapException), AspectPriority = 2)]
+        [RetryOnExceptionAttribute(2, AspectPriority = 1)]
         public string GetHoliday(string holiday)
         {
             return string.Format("{0}: {1}", holiday, _service.GetHolidayDate(holiday, 2014).ToShortDateString());

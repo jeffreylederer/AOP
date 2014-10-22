@@ -10,6 +10,7 @@ namespace BeforeAfter
             Console.WriteLine(holidays.GetHolidays());
             Console.WriteLine(holidays.GetHoliday("THANKSGIVING"));
             Console.WriteLine(holidays.GetHoliday("MICROSOFTDAY"));
+            Console.WriteLine(holidays.IsHoliday("WEASELWACKINGDAY"));
             Console.ReadKey();
         }
     } 

@@ -4,8 +4,15 @@ using PostSharp.Aspects;
 namespace Intercept
 {
     [Serializable]
-    public class ExceptionAspect : OnExceptionAspect
+    public class ExceptionAspectAttribute : OnExceptionAspect
     {
+        private Type _expectedException;
+
+        public ExceptionAspectAttribute(Type ExpectedException)
+        {
+            _expectedException = ExpectedException;
+        }
+
         public override void OnException(MethodExecutionArgs args)
         {
             args.FlowBehavior = FlowBehavior.Return;

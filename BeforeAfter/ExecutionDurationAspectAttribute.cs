@@ -7,26 +7,28 @@ using PostSharp.Extensibility;
 namespace BeforeAfter
 {
     [Serializable]
-    public class ExecutionDurationAspect : OnMethodBoundaryAspect
+    [MulticastAttributeUsage(MulticastTargets.Method)]
+    public class ExecutionDurationAspectAttribute : OnMethodBoundaryAspect
     {
         private string _methodName;
         public override void CompileTimeInitialize(System.Reflection.MethodBase method, AspectInfo aspectInfo)
         {
             _methodName = method.Name;
+            base.CompileTimeInitialize(method, aspectInfo);
         }
 
         public override bool CompileTimeValidate(MethodBase method)
         {
             var info = method as MethodInfo;
-            if (info == null || info.ReturnType.ToString() != "System.String")
+            if (!typeof(String).IsAssignableFrom(info.ReturnType))
             {
                 Message.Write(MessageLocation.Of(method), SeverityType.Error, "987",
                     "Methods using this aspect can only return a string. You applied it on type {0}",
-                    info == null ? "Unknown" : info.ReturnType.ToString());
+                    info.ReturnType.ToString());
               
                 return false;
             }
-            return true;
+            return base.CompileTimeValidate(method);
         }
         public override void OnEntry(MethodExecutionArgs args)
         {

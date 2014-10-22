@@ -4,7 +4,7 @@ using PostSharp.Aspects;
 namespace Location
 {
     [Serializable]
-    public class LazyLoaderAspect : LocationInterceptionAspect
+    public class LazyLoaderAspectAttribute : LocationInterceptionAspect
     {
 
         private object _backingField;

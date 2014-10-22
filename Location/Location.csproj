@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Holidays.cs" />
-    <Compile Include="LazyLoaderAspect.cs" />
+    <Compile Include="LazyLoaderAspectAttribute.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="USHolidayService.cs" />

@@ -6,8 +6,12 @@ namespace Intercept
     [Serializable]
     public class RetryOnExceptionAttribute : MethodInterceptionAspect
     {
-        public int MaxRetries { get; set; }
+        private int _maxRetries { get; set; }
 
+        public RetryOnExceptionAttribute(int MaxRetries)
+        {
+            _maxRetries = MaxRetries;
+        }
        
         public override void OnInvoke(MethodInterceptionArgs args)
         {
@@ -23,7 +27,7 @@ namespace Intercept
                 catch (Exception e)
                 {
                     retriesCounter++;
-                    if (retriesCounter > this.MaxRetries) throw;
+                    if (retriesCounter > _maxRetries) throw;
 
                     Console.WriteLine(
                         "Exception during attempt {0} of calling method {1}.{2}: {3}",
